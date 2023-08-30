@@ -42,7 +42,7 @@ style="width:8in;height:7in" />
 
 </div>
 
-```{dot}
+{dot}
 //| echo: false
 graph ER {
 	fontname="Helvetica,Arial,sans-serif"
@@ -69,4 +69,4 @@ graph ER {
 
 	fontsize=20;
 }
-```
+
