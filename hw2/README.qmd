@@ -17,7 +17,29 @@ Imagine you're designing a Library Management System for a small local library. 
 ## Design Task 1
 
 Identify and document the entities, attributes, and relationships using Chen notation.
-
+```{dot}
+//| echo: false
+graph ER {
+    layout=neato;
+  scale=1.1;
+    node [shape=box]; book; member; 
+    node [shape=ellipse];
+    node [shape=diamond,style=filled,color=lightgrey]; has
+    
+    member -- has [label="1",len=1.00]
+    has -- book [label="n",len=1.00]
+    
+    member -- ID
+    member --name
+    member -- contact_info
+   
+    book -- ISBN
+    book -- title
+    book -- publication_year
+     
+  
+}
+```
 
 
 ## Design Task 2
