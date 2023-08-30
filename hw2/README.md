@@ -25,7 +25,7 @@ Chen notation.
 <div>
 
 <img src="chen.png"
-style="width:7in;height:5in" />
+style="width:7in;height:7in" />
 
 </div>
 
@@ -35,15 +35,9 @@ style="width:7in;height:5in" />
 
 Identify and document the entities, attributes, and relationships using Crow’s Foot notation.
 
-<center>
+<div>
 
-```{mermaid}
-erDiagram
-    Student ||--o{ Enrollment : "Enrolls In"
-    Enrollment }o--|| Course : "Belongs To"
-    Course ||--o{ Enrollment : "Has"
-```
+<img src="crows_feet.png"
+style="width:7in;height:7in" />
 
-
-</center>
-
+</div>
