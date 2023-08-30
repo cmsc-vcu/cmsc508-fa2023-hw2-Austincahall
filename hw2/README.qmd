@@ -18,26 +18,30 @@ Imagine you're designing a Library Management System for a small local library. 
 
 Identify and document the entities, attributes, and relationships using Chen notation.
 
-graph ER {
-    layout=neato;
-  scale=1.1;
-    node [shape=box]; book; member; 
-    node [shape=ellipse];
-    node [shape=diamond,style=filled,color=lightgrey]; has
-    
-    member -- has [label="1",len=1.00]
-    has -- book [label="n",len=1.00]
-    
-    member -- ID
-    member --name
-    member -- contact_info
-   
-    book -- ISBN
-    book -- title
-    book -- publication_year
-     
-  
-}
+<center>
+:::: {.columns}
+
+::: {.column}
+```{mermaid}
+erDiagram
+    Student ||--o{ Enrollment : "Enrolls In"
+    Enrollment }o--|| Course : "Belongs To"
+    Course ||--o{ Enrollment : "Has"
+```
+:::
+::: {.column}
+
+```{mermaid}
+erDiagram
+    CUSTOMER ||--o{ ORDER : places
+    ORDER ||--|{ LINE-ITEM : contains
+    CUSTOMER }|..|{ DELIVERY-ADDRESS : uses
+```
+:::
+
+<center>*Example ER diagrams*</center>
+::::
+</center>
 
 ## Design Task 2
 
