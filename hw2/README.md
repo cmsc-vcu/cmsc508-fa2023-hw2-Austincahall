@@ -37,6 +37,7 @@ graph ER {
   room -- room_number
     room -- occupant
 }
+
 ## Design Task 2
 
 Identify and document the entities, attributes, and relationships using
