@@ -18,34 +18,35 @@ Imagine you're designing a Library Management System for a small local library. 
 
 Identify and document the entities, attributes, and relationships using Chen notation.
 
+
+
+## Design Task 2
+
+Identify and document the entities, attributes, and relationships using Crow’s Foot notation.
+
 <center>
 :::: {.columns}
 
 ::: {.column}
 ```{mermaid}
 erDiagram
-    Student ||--o{ Enrollment : "Enrolls In"
-    Enrollment }o--|| Course : "Belongs To"
-    Course ||--o{ Enrollment : "Has"
+member ||--O{ book : has
+
+member{
+  unique ID
+  string name
+  string contact_info
+}
+
+book {
+  string ISBN
+  string title
+  number publication_year
+}
 ```
 :::
-::: {.column}
 
-```{mermaid}
-erDiagram
-    CUSTOMER ||--o{ ORDER : places
-    ORDER ||--|{ LINE-ITEM : contains
-    CUSTOMER }|..|{ DELIVERY-ADDRESS : uses
-```
-:::
 
-<center>*Example ER diagrams*</center>
 ::::
 </center>
-
-## Design Task 2
-
-Identify and document the entities, attributes, and relationships using Crow’s Foot notation.
-
-*(remove this block and add your your solution here!)*
 

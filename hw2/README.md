@@ -20,6 +20,11 @@ they don’t have to.
 Identify and document the entities, attributes, and relationships using
 Chen notation.
 
+## Design Task 2
+
+Identify and document the entities, attributes, and relationships using
+Crow’s Foot notation.
+
 <center>
 
 <div class="columns">
@@ -27,28 +32,10 @@ Chen notation.
 <div class="column">
 
 <img src="README_files\figure-commonmark\mermaid-figure-1.png"
-style="width:1.66in;height:4.84in" />
+style="width:1.81in;height:3.33in" />
 
 </div>
-
-<div class="column">
-
-<img src="README_files\figure-commonmark\mermaid-figure-2.png"
-style="width:3.85in;height:4.84in" />
-
-</div>
-
-<center>
-*Example ER diagrams*
-</center>
 
 </div>
 
 </center>
-
-## Design Task 2
-
-Identify and document the entities, attributes, and relationships using
-Crow’s Foot notation.
-
-*(remove this block and add your your solution here!)*
