@@ -24,10 +24,6 @@ Identify and document the entities, attributes, and relationships using Chen not
 
 Identify and document the entities, attributes, and relationships using Crow’s Foot notation.
 
-<center>
-:::: {.columns}
-
-::: {.column}
 ```{mermaid}
 erDiagram
 member ||--O{ book : has
@@ -44,9 +40,5 @@ book {
   number publication_year
 }
 ```
-:::
 
-
-::::
-</center>
 
