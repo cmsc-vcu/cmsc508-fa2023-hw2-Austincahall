@@ -20,27 +20,25 @@ they don’t have to.
 Identify and document the entities, attributes, and relationships using
 Chen notation.
 
-graph ER { layout=neato; scale=1.1; node \[shape=box\]; book; member;
-node \[shape=ellipse\]; node
-\[shape=diamond,style=filled,color=lightgrey\]; has
+<div>
 
-    member -- has [label="1",len=1.00]
-    has -- book [label="n",len=1.00]
+<div>
 
-    member -- ID
-    member --name
-    member -- contact_info
+<img src="chen.png"
+style="width:7in;height:7in" />
 
-    book -- ISBN
-    book -- title
-    book -- publication_year
-     
+</div>
 
-}
+</div>
 
 ## Design Task 2
 
-Identify and document the entities, attributes, and relationships using
-Crow’s Foot notation.
+Identify and document the entities, attributes, and relationships using Crow’s Foot notation.
 
-*(remove this block and add your your solution here!)*
+<div>
+
+<img src="crows_feet.png"
+style="width:8in;height:7in" />
+
+</div>
+
