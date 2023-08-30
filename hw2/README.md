@@ -36,17 +36,14 @@ style="width:7in;height:5in" />
 Identify and document the entities, attributes, and relationships using Crow’s Foot notation.
 
 <center>
-:::: {.columns}
 
-::: {.column}
 ```{mermaid}
 erDiagram
     Student ||--o{ Enrollment : "Enrolls In"
     Enrollment }o--|| Course : "Belongs To"
     Course ||--o{ Enrollment : "Has"
 ```
-:::
-::: {.column}
+
 
 </center>
 
