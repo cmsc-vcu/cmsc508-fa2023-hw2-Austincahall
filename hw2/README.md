@@ -20,22 +20,25 @@ they don’t have to.
 Identify and document the entities, attributes, and relationships using
 Chen notation.
 
-*(remove this block and add your your solution here!)*
 graph ER {
     layout=neato;
   scale=1.1;
-    node [shape=box]; building; room;
-    node [shape=ellipse]; address, city, state, occupant, room_number
+    node [shape=box]; book; member; 
+    node [shape=ellipse];
     node [shape=diamond,style=filled,color=lightgrey]; has
     
-    building -- has [label="1",len=1.00]
-    has -- room [label="n",len=1.00]
+    member -- has [label="1",len=1.00]
+    has -- book [label="n",len=1.00]
     
-    building -- address
-    building -- city
-    building -- state
-  room -- room_number
-    room -- occupant
+    member -- ID
+    member --name
+    member -- contact_info
+   
+    book -- ISBN
+    book -- title
+    book -- publication_year
+     
+  
 }
 
 ## Design Task 2
@@ -43,16 +46,3 @@ graph ER {
 Identify and document the entities, attributes, and relationships using
 Crow’s Foot notation.
 
-erDiagram
-BUILDING ||--|{ ROOM : contains
-
-BUILDING{
-  string address
-  string city
-  string state
-}
-
-ROOM {
-  string room_number
-  string occupants
-}
