@@ -41,3 +41,32 @@ Identify and document the entities, attributes, and relationships using Crow’s
 style="width:8in;height:7in" />
 
 </div>
+
+```{dot}
+//| echo: false
+graph ER {
+	fontname="Helvetica,Arial,sans-serif"
+	node [fontname="Helvetica,Arial,sans-serif"]
+	edge [fontname="Helvetica,Arial,sans-serif"]
+	layout=neato
+	node [shape=box]; course; discipline; student;
+	node [shape=ellipse]; {node [label="name"] name0; name1; name2;}
+		code; grade; number;
+	node [shape=diamond,style=filled,color=lightgrey]; "Offers"; "Enrolls"; "majors";
+
+	name0 -- course;
+	code -- course;
+	course -- "Offers" [label="n",len=1.00];
+	"Offers" -- discipline [label="1",len=1.00];
+	discipline -- name1;
+	discipline -- "majors" [label="1",len=1.00];
+	"majors" -- student [label="n",len=1.00];
+	student -- grade;
+	student -- name2;
+	student -- number;
+	student -- "Enrolls" [label="m",len=1.00];
+	"Enrolls" -- course [label="n",len=1.00];
+
+	fontsize=20;
+}
+```
