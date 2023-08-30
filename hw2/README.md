@@ -42,8 +42,7 @@ style="width:8in;height:7in" />
 
 </div>
 
-{dot}
-//| echo: false
+
 graph ER {
 	fontname="Helvetica,Arial,sans-serif"
 	node [fontname="Helvetica,Arial,sans-serif"]
