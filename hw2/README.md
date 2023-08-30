@@ -20,40 +20,16 @@ they don’t have to.
 Identify and document the entities, attributes, and relationships using
 Chen notation.
 
-<center>
-:::: {.columns}
+<div>
 
-::: {.column}
-```{mermaid}
-erDiagram
-    Student ||--o{ Enrollment : "Enrolls In"
-    Enrollment }o--|| Course : "Belongs To"
-    Course ||--o{ Enrollment : "Has"
-```
-:::
-::: {.column}
+<div>
 
-```{mermaid}
-erDiagram
-    CUSTOMER ||--o{ ORDER : places
-    ORDER ||--|{ LINE-ITEM : contains
-    CUSTOMER }|..|{ DELIVERY-ADDRESS : uses
-```
-:::
+<img src="chen.png"
+style="width:7in;height:5in" />
 
-<center>*Example ER diagrams*</center>
-::::
-</center>
+</div>
 
-
-## Design Task 2
-
-Identify and document the entities, attributes, and relationships using
-Crow’s Foot notation.
-
-erDiagram
-BUILDING ||--|{ ROOM : contains
-
+</div>
 BUILDING{
   string address
   string city
