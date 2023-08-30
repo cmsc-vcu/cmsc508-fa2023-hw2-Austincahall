@@ -1,5 +1,5 @@
 # Welcome to Homework 2
-(your name goes here!)
+Austin Cahall
 2023-08-30
 
 This is my solution to homework 2. I’m using Quarto render this document
@@ -43,4 +43,16 @@ graph ER {
 Identify and document the entities, attributes, and relationships using
 Crow’s Foot notation.
 
-*(remove this block and add your your solution here!)*
+erDiagram
+BUILDING ||--|{ ROOM : contains
+
+BUILDING{
+  string address
+  string city
+  string state
+}
+
+ROOM {
+  string room_number
+  string occupants
+}
