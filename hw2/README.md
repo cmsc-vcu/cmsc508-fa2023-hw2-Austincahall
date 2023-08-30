@@ -38,6 +38,6 @@ Identify and document the entities, attributes, and relationships using Crow’s
 <div>
 
 <img src="crows_feet.png"
-style="width:7in;height:7in" />
+style="width:8in;height:7in" />
 
 </div>
