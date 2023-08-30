@@ -46,3 +46,17 @@ graph ER {
 Identify and document the entities, attributes, and relationships using
 Crow’s Foot notation.
 
+erDiagram
+BUILDING ||--|{ ROOM : contains
+
+BUILDING{
+  string address
+  string city
+  string state
+}
+
+ROOM {
+  string room_number
+  string occupants
+}
+
