@@ -30,14 +30,10 @@ style="width:7in;height:5in" />
 </div>
 
 </div>
-BUILDING{
-  string address
-  string city
-  string state
-}
 
-ROOM {
-  string room_number
-  string occupants
-}
+## Design Task 2
+
+Identify and document the entities, attributes, and relationships using Crow’s Foot notation.
+
+*(remove this block and add your your solution here!)*
 
