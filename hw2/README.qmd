@@ -23,7 +23,7 @@ graph ER {
     layout=neato;
   scale=1.1;
     node [shape=box]; book; member; 
-    node [shape=ellipse];
+    node [shape=ellipse] ID; name; contact_info; ISBN; title; publication_year; 
     node [shape=diamond,style=filled,color=lightgrey]; has
     
     member -- has [label="1",len=1.00]
@@ -48,7 +48,7 @@ Identify and document the entities, attributes, and relationships using Crow’s
 
 ```{mermaid}
 erDiagram
-member ||--O{ book : has
+member |o--O{ book : has
 
 member{
   unique ID

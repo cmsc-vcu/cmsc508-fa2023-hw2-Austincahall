@@ -1,6 +1,6 @@
 # Welcome to Homework 2
 Austin Cahall
-2023-08-30
+2023-08-31
 
 This is my solution to homework 2. I’m using Quarto render this document
 from a QMD file to a regular MD file for display on GITHUB.
